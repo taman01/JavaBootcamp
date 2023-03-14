@@ -10,19 +10,11 @@ public class Stack {
 
     static void push(int e){
         if (top == data.length){
-         //  var newData = new int[top + 10];
-           // for (int i = 0; i < data.length; i++){
-             //   newData[i] = data[i];
-           //     data = newData;
             } data = Arrays.copyOf(data,top+10);
         data[top] = e;
         top = top +1;
 
         }
-
-
-
-
     static Integer pop(){
 
         if (top == 0)
